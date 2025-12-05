@@ -1,0 +1,482 @@
+--[=[
+made by snakeGOD, skids can skid this!
+]=]
+
+-- Instances: 33 | Scripts: 11 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Snake's F3x
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Snake's F3x]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.Snake's F3x.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(66, 66, 66);
+G2L["2"]["Size"] = UDim2.new(0, 269, 0, 284);
+G2L["2"]["Position"] = UDim2.new(0.69326, 0, 0.27233, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame
+G2L["4"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["4"]["Active"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["CanvasPosition"] = Vector2.new(0, 253.16667);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(103, 103, 103);
+G2L["4"]["Size"] = UDim2.new(0, 269, 0, 238);
+G2L["4"]["ScrollBarImageColor3"] = Color3.fromRGB(66, 66, 66);
+G2L["4"]["Position"] = UDim2.new(0, 0, 0.16197, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.RedSun
+G2L["6"] = Instance.new("TextButton", G2L["4"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Red sun in the sky (ching chong)]];
+G2L["6"]["Name"] = [[RedSun]];
+G2L["6"]["Position"] = UDim2.new(0, 0, 0.02928, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.RedSun.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.OO
+G2L["8"] = Instance.new("TextButton", G2L["4"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Electro sp00k]];
+G2L["8"]["Name"] = [[OO]];
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.OO.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.UIListLayout
+G2L["a"] = Instance.new("UIListLayout", G2L["4"]);
+G2L["a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.Ni
+G2L["b"] = Instance.new("TextButton", G2L["4"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Loli (short loop)]];
+G2L["b"]["Name"] = [[Ni]];
+G2L["b"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.Ni.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.bgh
+G2L["d"] = Instance.new("TextButton", G2L["4"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Polskaaa]];
+G2L["d"]["Name"] = [[bgh]];
+G2L["d"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.bgh.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.SAF
+G2L["f"] = Instance.new("TextButton", G2L["4"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[WHFN (we hate fckin niggers)]];
+G2L["f"]["Name"] = [[SAF]];
+G2L["f"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.SAF.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.KUI
+G2L["11"] = Instance.new("TextButton", G2L["4"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Coca Cola espuma sparta remix]];
+G2L["11"]["Name"] = [[KUI]];
+G2L["11"]["Position"] = UDim2.new(-0.55762, 0, 0.65966, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.KUI.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.UHY
+G2L["13"] = Instance.new("TextButton", G2L["4"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[F.A.N (bobby2pistolz)]];
+G2L["13"]["Name"] = [[UHY]];
+G2L["13"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.UHY.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.QWERTY
+G2L["15"] = Instance.new("TextButton", G2L["4"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Take down all the mirrors in my housr]];
+G2L["15"]["Name"] = [[QWERTY]];
+G2L["15"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.QWERTY.LocalScript
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.GFD
+G2L["17"] = Instance.new("TextButton", G2L["4"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[CoiKAX theme ]];
+G2L["17"]["Name"] = [[GFD]];
+G2L["17"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.GFD.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.OOII
+G2L["19"] = Instance.new("TextButton", G2L["4"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Rampage Song]];
+G2L["19"]["Name"] = [[OOII]];
+G2L["19"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.OOII.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.tttrg
+G2L["1b"] = Instance.new("TextButton", G2L["4"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[UUFO P-]];
+G2L["1b"]["Name"] = [[tttrg]];
+G2L["1b"]["Position"] = UDim2.new(0, 0, 0.11189, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.tttrg.LocalScript
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.TextLabel
+G2L["1d"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 269, 0, 24);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[HD admin audio's V1]];
+
+
+-- StarterGui.Snake's F3x.Frame.TextLabel.UICorner
+G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+G2L["1e"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- StarterGui.Snake's F3x.Frame.TextLabel
+G2L["1f"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Size"] = UDim2.new(0, 269, 0, 24);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[by snakeGOD]];
+G2L["1f"]["Position"] = UDim2.new(0, 0, 0.07746, 0);
+
+
+-- StarterGui.Snake's F3x.Frame.TextLabel.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1f"]);
+G2L["20"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- StarterGui.Snake's F3x.Frame.UIDragDetector
+G2L["21"] = Instance.new("UIDragDetector", G2L["2"]);
+
+
+
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.RedSun.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local RedSun = script.Parent
+	
+	RedSun.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 96095097511895") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.062")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.OO.LocalScript
+local function C_9()
+local script = G2L["9"];
+	local OO = script.Parent
+	
+	OO.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 72089843969979") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.205")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.Ni.LocalScript
+local function C_c()
+local script = G2L["c"];
+	local Ni = script.Parent
+	
+	Ni.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 136671616193376") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.13")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_c);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.bgh.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local bgh = script.Parent
+	
+	bgh.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 126445235514435") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.16")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.SAF.LocalScript
+local function C_10()
+local script = G2L["10"];
+	local SAF = script.Parent
+	
+	SAF.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 131797825300719") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.17")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_10);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.KUI.LocalScript
+local function C_12()
+local script = G2L["12"];
+	local KUI = script.Parent
+	
+	KUI.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 125393628300000") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.099")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_12);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.UHY.LocalScript
+local function C_14()
+local script = G2L["14"];
+	local UHY = script.Parent
+	
+	UHY.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 90172630743490") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.144")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_14);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.QWERTY.LocalScript
+local function C_16()
+local script = G2L["16"];
+	local QWERTY = script.Parent
+	
+	QWERTY.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 133959050979227") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.056")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_16);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.GFD.LocalScript
+local function C_18()
+local script = G2L["18"];
+	local GFD = script.Parent
+	
+	GFD.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 1839272148") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.91")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_18);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.OOII.LocalScript
+local function C_1a()
+local script = G2L["1a"];
+	local OOII = script.Parent
+	
+	OOII.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 70787882418532 ") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 1.07055")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_1a);
+-- StarterGui.Snake's F3x.Frame.ScrollingFrame.tttrg.LocalScript
+local function C_1c()
+local script = G2L["1c"];
+	local tttrg = script.Parent
+	
+	tttrg.MouseButton1Click:Connect(function() -- Replace with your instance name
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommand
+		RequestCommand:InvokeServer(";music 95217917180708 ") -- U can change all of it with your commands!
+		RequestCommand:InvokeServer(";pitch 0.135")
+		RequestCommand:InvokeServer(";Volume inf")
+	end)
+end;
+task.spawn(C_1c);
+
+return G2L["1"], require;
