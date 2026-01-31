@@ -1,0 +1,105 @@
+function exPro(root)
+	for _, v in pairs(root:GetChildren()) do
+		if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=11426185601" then
+			v.Parent = nil
+		elseif v:IsA("BasePart") then
+			v.Material = "Plastic"
+			v.Transparency = 0
+			local One = Instance.new("Decal", v)
+			local Two = Instance.new("Decal", v)
+			local Three = Instance.new("Decal", v)
+			local Four = Instance.new("Decal", v)
+			local Five = Instance.new("Decal", v)
+			local Six = Instance.new("Decal", v)
+			One.Texture = "http://www.roblox.com/asset/?id=11426185601"-- CHANGE ID
+			Two.Texture = "http://www.roblox.com/asset/?id=11426185601"-- CHANGE ID
+			Three.Texture = "http://www.roblox.com/asset/?id=11426185601"-- CHANGE ID
+			Four.Texture = "http://www.roblox.com/asset/?id=11426185601"-- CHANGE ID
+			Five.Texture = "http://www.roblox.com/asset/?id=11426185601"-- CHANGE ID
+			Six.Texture = "http://www.roblox.com/asset/?id=11426185601"-- CHANGE ID
+			One.Face = "Front"
+			Two.Face = "Back"
+			Three.Face = "Right"
+			Four.Face = "Left"
+			Five.Face = "Top"
+			Six.Face = "Bottom"
+		end
+		exPro(v)
+	end
+end
+function asdf(root)
+	for _, v in pairs(root:GetChildren()) do
+		asdf(v)
+	end
+end
+exPro(game.Workspace)
+asdf(game.Workspace)
+
+-- h00zkidd Particles Script By h00zkidd
+
+-- no skid this skidders
+
+game.Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function(character)
+		local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+		if torso then
+			local pe = Instance.new("ParticleEmitter", torso)
+			pe.Texture = "rbxassetid://9422866248"
+			pe.VelocitySpread = 50
+
+			local se = Instance.new("ParticleEmitter", torso)
+			se.Texture = "rbxassetid://9422866248"
+			se.VelocitySpread = 50
+
+			local fe = Instance.new("ParticleEmitter", torso)
+			fe.Texture = "rbxassetid://9422866248"
+			fe.VelocitySpread = 50
+		end
+	end)
+end)
+
+for _, player in pairs(game.Players:GetPlayers()) do
+	if player.Character then
+		local torso = player.Character:FindFirstChild("Torso") or player.Character:FindFirstChild("UpperTorso")
+		if torso then
+			local pe = Instance.new("ParticleEmitter", torso)
+			pe.Texture = "rbxassetid://9422866248"
+			pe.VelocitySpread = 50
+
+			local se = Instance.new("ParticleEmitter", torso)
+			se.Texture = "rbxassetid://9422866248"
+			se.VelocitySpread = 50
+
+			local fe = Instance.new("ParticleEmitter", torso)
+			fe.Texture = "rbxassetid://9422866248"
+			fe.VelocitySpread = 50
+		end
+	end
+end
+
+s = Instance.new("Sky")
+s.Name = "Sky"
+s.Parent = game.Lighting
+s.SkyboxBk = "http://www.roblox.com/asset/?id=11426185601"
+s.SkyboxDn = "http://www.roblox.com/asset/?id=11426185601"
+s.SkyboxFt = "http://www.roblox.com/asset/?id=11426185601"
+s.SkyboxLf = "http://www.roblox.com/asset/?id=11426185601"
+s.SkyboxRt = "http://www.roblox.com/asset/?id=11426185601"
+s.SkyboxUp = "http://www.roblox.com/asset/?id=11426185601"
+game.Lighting.TimeOfDay = 12
+
+
+for i,v in pairs(game.Workspace:GetChildren()) do
+	if v.className == "Sound" then
+		v:Stop()
+		v:Remove()	
+	end	
+end
+s = Instance.new("Sound",Workspace)
+s.SoundId = "rbxassetid://124474733922689"
+s.Volume = 10
+s.Looped = true
+s.Pitch = 0.105
+s:Play()
+wait(.1)
+s:Play()
